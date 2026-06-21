@@ -12,7 +12,17 @@ Output will be saved to `output.txt`. The console will confirm when the file has
 
 ## What This Script Does
 
-This script counts the amount of open complaints through a variable along with the amount of complaints by borough, and amount of complaints by type. To count complaints by borough and type, a frequency counter is used. All counters loop through the data through a rows list.
+This script reads NYC 311 request data and writes a statistic summary through the `output.txt` file. The list is as follows:
+
+- Amount of open requests through all boroughs
+- Most common complaint type through all boroughs
+- Amount of total requests per borough
+- Amount of requests per complaint type
+- Borough with most open requests and amount of requests
+- Closure rate of requests by borough, sorted alphabetically
+- Top 3 boroughs by total requests, sorted alphabetically
+
+This script utilizes dictionaries as frequency counters for counting complaint types, amount of open requests, etc. Some data is written to the `output.txt` file through a loop from previous dictionaries.
 
 ## Dependencies
 
